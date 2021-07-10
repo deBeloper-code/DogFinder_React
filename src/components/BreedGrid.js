@@ -6,7 +6,11 @@ const BreedGrid = ({breed}) =>{
 
     const {data: images, loading} = useFetchBreed(breed);
 
+
+
+
 let imagenes;
+
    if (loading === 'success') {
         imagenes =  <div className='ContentImagenes'>
        {images.map(img=>{
